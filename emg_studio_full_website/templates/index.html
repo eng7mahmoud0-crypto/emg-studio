@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMG Studio | Mahmoud Saad</title>
+  <meta name="description" content="EMG Studio - Graphic Design, Video Editing, Photography by Mahmoud Saad">
+  <link rel="icon" href="/static/img/favicon-preview.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="header">
+    <a href="#home" class="brand">
+      <img src="/static/img/emg-logo.png" alt="EMG Logo">
+      <div>
+        <strong>EMG Studio</strong>
+        <span>Graphic • Video • Photography</span>
+      </div>
+    </a>
+
+    <nav class="nav">
+      <a href="#home">الرئيسية</a>
+      <a href="#services">الخدمات</a>
+      <a href="#portfolio">الأعمال</a>
+      <a href="#contact">تواصل</a>
+    </nav>
+
+    <button class="private-btn" onclick="openAdmin()">Private Upload</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-content reveal">
+        <span class="badge">Senior Graphic Designer & Video Editor</span>
+        <h1>أنا <em>Mahmoud Saad</em><br>بصنع شكل براندك باحتراف.</h1>
+        <p>
+          EMG Studio للتصوير، المونتاج، الجرافيك ديزاين، الهوية البصرية وتصميمات السوشيال ميديا.
+          موقع مرتب يعرض شغلك للعميل بشكل قوي وسهل.
+        </p>
+
+        <div class="hero-actions">
+          <a class="primary" href="#portfolio">شوف الأعمال</a>
+          <a class="secondary" target="_blank" href="https://wa.me/201021095335">واتساب</a>
+        </div>
+
+        <div class="stats">
+          <div><b>+300</b><span>تصميم</span></div>
+          <div><b>+5</b><span>سنوات خبرة</span></div>
+          <div><b>4K</b><span>Video Editing</span></div>
+        </div>
+      </div>
+
+      <div class="hero-card reveal">
+        <div class="glow"></div>
+        <img src="/static/img/mahmoud-hero.png" alt="Mahmoud Saad">
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section-head reveal">
+        <span>Services</span>
+        <h2>خدمات EMG Studio</h2>
+        <p>كل قسم متقسم ومنظم علشان العميل يوصل للشغل اللي يهمه بسرعة.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <i>🎨</i>
+          <h3>Graphic Design</h3>
+          <p>لوجوهات، هويات بصرية، بوستات سوشيال، منيوهات، إعلانات وBrand Guidelines.</p>
+        </article>
+        <article class="service-card reveal">
+          <i>🎬</i>
+          <h3>Video Editing</h3>
+          <p>مونتاج إعلانات، ريلز، فيديوهات براند، موشن جرافيك، كولور وساوند ديزاين.</p>
+        </article>
+        <article class="service-card reveal">
+          <i>📸</i>
+          <h3>Photography</h3>
+          <p>تصوير منتجات، بورتريه، مطاعم وكافيهات، وإضاءة استوديو احترافية.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section">
+      <div class="section-head reveal">
+        <span>Portfolio</span>
+        <h2>معرض الأعمال</h2>
+      </div>
+
+      <div class="filters reveal">
+        <button class="filter active" data-filter="all">الكل</button>
+        <button class="filter" data-filter="graphic">جرافيك</button>
+        <button class="filter" data-filter="video">مونتاج</button>
+        <button class="filter" data-filter="photo">تصوير</button>
+      </div>
+
+      <div id="portfolioGrid" class="portfolio-grid"></div>
+    </section>
+
+    <section class="why section reveal">
+      <img src="/static/img/favicon-preview.png" alt="EMG Icon">
+      <div>
+        <span>Why EMG?</span>
+        <h2>تصميم يشد العين ومونتاج يخلي العميل يكمل للآخر</h2>
+        <p>
+          بنجمع بين الذوق البصري، التنظيم، السرعة، والتسليم الاحترافي المناسب لكل منصة.
+          الهدف إن شغلك يظهر High-End من أول نظرة.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section reveal">
+      <h2>جاهز نبدأ؟</h2>
+      <p>ابعتلي تفاصيل مشروعك على واتساب أو شوف أعمالي على Behance وفيسبوك.</p>
+      <div class="contact-links">
+        <a target="_blank" href="https://www.facebook.com/share/17KxGzhf95/">Facebook</a>
+        <a target="_blank" href="https://www.behance.net/mahmoudsaad142">Behance</a>
+        <a target="_blank" href="https://wa.me/201021095335">WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 EMG Studio — Mahmoud Saad</footer>
+
+  <div id="adminModal" class="modal">
+    <div class="modal-box">
+      <button class="close" onclick="closeAdmin()">×</button>
+      <h2>Private Upload Area</h2>
+      <p>المنطقة دي ليك أنت بس. العميل مش هيشوفها غير لو معاه كلمة السر.</p>
+
+      <div class="form">
+        <input id="adminPassword" type="password" placeholder="Password: EMG2026">
+        <input id="workTitle" type="text" placeholder="اسم التصميم / المشروع">
+        <select id="workCategory">
+          <option value="graphic">Graphic Design</option>
+          <option value="video">Video Editing</option>
+          <option value="photo">Photography</option>
+        </select>
+        <textarea id="workDesc" placeholder="وصف مختصر للعمل"></textarea>
+        <input id="workFile" type="file" accept="image/*,video/*">
+        <button onclick="uploadWork()">رفع العمل</button>
+      </div>
+
+      <div id="adminMessage"></div>
+    </div>
+  </div>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
